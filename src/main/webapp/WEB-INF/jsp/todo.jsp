@@ -1,3 +1,5 @@
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+
 <HTML>
 
 	<HEAD>	
@@ -10,14 +12,14 @@
 			<HR>
 			Add todo for ${name}
 		
-				<form method="post">
+				<form:form method="post" modelAttribute="todo"> <!-- commandName deprecated, modelAttribute instead -->
 					<fieldset class="form-group">
-						<label>Description</label>
-						<input class="form-controle" name="desc" type="text" required="required"/>
+						<form:label path="desc">Description</form:label>
+						<form:input path="desc" class="form-controle" name="desc" type="text" required="required"/>
 					</fieldset>
 					
 					<button type="submit" class="btn btn-success">Add</button>
-				</form>
+				</form:form>
 		</div>
 		<script src="webjars/jquery/1.9.1/jquery.min.js"></script>
 		<script src="webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
