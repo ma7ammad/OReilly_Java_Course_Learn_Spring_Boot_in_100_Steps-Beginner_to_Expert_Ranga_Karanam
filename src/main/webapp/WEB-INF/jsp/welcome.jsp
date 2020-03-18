@@ -22,9 +22,9 @@ is a link to another nifty site
 <H2><a href = "/list-todos"> click here </a> to manage your Todo's</H2>
 
 
-Send me mail at <a href="mailto:support@yourcompany.com">
+Send me mail at <a href="mailto:support@mohamedadam.com">
 
-support@yourcompany.com</a>.
+support@mohamedadam.com</a>.
 
 <P> This is a new paragraph!
 

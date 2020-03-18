@@ -1,6 +1,6 @@
 <html>
 <head>
-  <title>Echoing HTML Request Parameters</title>
+  <title>About</title>
 </head>
 <body>
   <h3>Choose an author:</h3>
