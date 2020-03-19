@@ -1,13 +1,12 @@
-<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
-
+<%@ include file="common/header.jspf" %>
 <HTML>
 
 	<HEAD>	
-		<TITLE>Todo</TITLE>
-		<link href="webjars/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">	
+		<TITLE>Todo</TITLE>		
 	</HEAD>
 
 	<BODY BGCOLOR="FFFFFF">
+<%@ include file="common/navigation.jspf" %>
 		<div class="container">
 			<HR>
 			Add todo for ${name}
@@ -29,20 +28,14 @@
 				</form:form>
 		</div>
 		<script src="webjars/jquery/1.9.1/jquery.min.js"></script>
-		<script src="webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-		
-		<script
-		src="webjars/bootstrap-datetimepicker/2.4.2/js/bootstrap-datetimepicker.js"></script>
-	<script>
-		$('#targetDate').datetimepicker({
-				format:"dd/mm/yyyy HH:mm",
-  				dateFormat: "dd/mm/yyyy", 
- 			    timeFormat: "HH:mm",
- 			  inline:true,
-			  lang:'en'
-			});
-	</script>
-	
-	</BODY>
-
-</HTML>
+		<script src="webjars/bootstrap-datetimepicker/2.4.2/js/bootstrap-datetimepicker.js"></script>
+		<script>
+			$('#targetDate').datetimepicker({
+					format:"dd/mm/yyyy HH:mm",
+	  				dateFormat: "dd/mm/yyyy", 
+	 			    timeFormat: "HH:mm",
+	 			  inline:true,
+				  lang:'en'
+				});
+		</script>
+<%@ include file="common/footer.jspf" %>

@@ -7,6 +7,8 @@
 		<link href="webjars/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
 	</HEAD>
 	<BODY BGCOLOR="#f3e6a6">
+<%@ include file="common/navigation.jspf" %>
+		
 		<div class="container">
 			<HR>
 			<h1>${name } Todo's are</h1>
@@ -39,9 +41,4 @@
 			<br>
 			<div><a class="button" href = "/add-todo"> Add a new Todo</a></div>			
 		</div>
-		
-		<script src="webjars/jquery/1.9.1/jquery.min.js"></script>
-		<script src="webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-	</BODY>
-
-</HTML>
+<%@ include file="common/footer.jspf" %>
