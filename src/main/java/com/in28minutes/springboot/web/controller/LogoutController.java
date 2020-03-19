@@ -20,12 +20,4 @@ public class LogoutController {
 		}
 		return "redirect:/";
 	}
-	
-//	private String getLoggedInUserName() {
-//		Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
-//		if (principal instanceof UserDetails) {
-//			return ((UserDetails) principal).getUsername();
-//		}
-//		return  principal.toString();
-//	}
 }
