@@ -1,6 +1,8 @@
 package com.in28minutes.springboot.web.controller;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+
+import javax.management.RuntimeErrorException;
 import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.propertyeditors.CustomDateEditor;
@@ -63,6 +65,9 @@ public class TodoController {
 	
 	@RequestMapping(value = "/delete-todo", method = RequestMethod.GET)
 	public String deleteTodo(@RequestParam int id) {
+		if (id==1) {
+			throw new RuntimeErrorException(null);
+		}
 		service.deleteTodo(id);
 		return "redirect:/list-todos";
 	}	
